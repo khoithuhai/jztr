@@ -30,17 +30,17 @@ section {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
+    background: rgb(137,207,240);
 }
 
 .heading span {
-    color: var(--bluebaby);
+    color: #FFFFFF;
 }
 
 .btn {
     display: inline-block;
     margin-top: 1rem;
-    border-radius: 5rem;
+    border-radius: 4rem;
     background: #333;
     color: #FFFFFF;
     padding: 0.9rem 3.5rem;
@@ -147,7 +147,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../tainguyen/homebg.jpg) no-repeat;
+    background: url(../tainguyen/homebgv4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -216,4 +216,131 @@ header .fa-bars {
     padding: 5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
+}
+
+.dacquyen-container {
+    background: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.dacquyen-container .dacquyen {
+    background: #fff;
+    border: 0.1rem solid rgba(0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.dacquyen-container .dacquyen img {
+    height: 5rem;
+    margin-right: 1.5rem;
+}
+
+.dacquyen-container .dacquyen h3 {
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.dacquyen-container .dacquyen span {
+    color: #555;
+    padding-bottom: 1.3rem;
+}
+
+.sanpham .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.sanpham .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0.1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0.1);
+    position: relative;
+}
+
+.sanpham .box-container .box .giamgia {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    color: var(--bluebaby);
+    background: #000000;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.sanpham .box-container .box .anhsanpham {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.sanpham .box-container .box .anhsanpham img {
+    height: 25rem;
+}
+
+.sanpham .box-container .box:hover .anhsanpham img {
+    transform: scale(1.1);
+}
+
+.sanpham .box-container .box .anhsanpham .bieutuong {
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+
+.sanpham .box-container .box:hover .anhsanpham .bieutuong {
+    bottom: 0;
+}
+
+.sanpham .box-container .box .anhsanpham .bieutuong a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--bluebaby);
+    color: #fff;
+}
+
+.sanpham .box-container .box .anhsanpham .bieutuong cart-btn {
+    border-left: .1rem solid #fff7 ;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+
+.sanpham .box-container .box .anhsanpham .bieutuong a:hover {
+    background: #333;
+}
+
+.sanpham .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sanpham .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.sanpham .box-container .box .content .gia {
+    font-size: 2.5rem;
+    color: var(--bluebaby);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.sanpham .box-container .box .content .gia span {
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
 }
