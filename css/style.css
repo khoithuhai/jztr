@@ -406,6 +406,7 @@ header .fa-bars {
 }
 
 .footer .box-container .box a {
+    display: block;
     color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
