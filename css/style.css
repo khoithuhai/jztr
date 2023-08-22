@@ -1,8 +1,24 @@
+@font-face {
+    font-family: 'Smoother';
+    src: url(../tainguyen/Smoother.otf);
+}
+
+@font-face {
+    font-family: 'BeausanProBook';
+    src: url(../tainguyen/SVN-BeauSansPro-Book.otf);
+}
+
+@font-face {
+    font-family: 'BeausanProRegular';
+    src: url(../tainguyen/SVN-BeauSansPro-Regular.otf);
+}
+
 :root {
     --bluebaby: #89CFF0;
     --gold: #FFD700;
     --blue: #8BD8BD;
 }
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -30,7 +46,7 @@ section {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgb(137,207,240);
+    background: var(--bluebaby);
 }
 
 .heading span {
@@ -61,14 +77,20 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem .1rem rgba(0,0,0.1);
+    box-shadow: 0 .5rem .1rem #89CFF0;
 }
 
 header .logo {
+    font-family: Smoother;
     font-size: 3rem;
     color: #333;
     font-weight: bolder;
 }
+
+header .logo:hover {
+    color:var(--bluebaby)
+}
+
 header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
@@ -171,6 +193,7 @@ header .fa-bars {
 }
 
 .trangchu .content p{
+    font-family: BeausanProBook;
     text-shadow: 0 0 20px #243665;
     font-size: 1.5rem;
     color: var(--blue);
@@ -211,6 +234,7 @@ header .fa-bars {
 }
 
 .about .row .content p {
+    font-family: BeausanProRegular;
     font-size: 1.5rem;
     color: #999;
     padding: 5rem 0;
