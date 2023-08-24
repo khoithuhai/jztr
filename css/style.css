@@ -13,10 +13,15 @@
     src: url(../tainguyen/SVN-BeauSansPro-Regular.otf);
 }
 
+@font-face {
+    font-family: 'Duepuntozero';
+    src: url(../tainguyen/UTM\ DuepuntozeroBold.ttf);
+}
+
 :root {
     --bluebaby: #89CFF0;
     --gold: #FFD700;
-    --blue: #8BD8BD;
+    --green: #8BD8BD;
 }
 
 *{
@@ -169,7 +174,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../tainguyen/homebgv4.jpg) no-repeat;
+    background: url(../tainguyen/Banner.JPEG) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -179,24 +184,23 @@ header .fa-bars {
 }
 
 .trangchu .content h3{
-    text-shadow: 0 0 20px #FF0000;
+    font-family: BeausanProBook;
     font-size: 6rem;
     color: #FFFFFF;
 }
 
 .trangchu .content span{
-    text-shadow: 0 0 20px #FFFFFF;
-    font-size: 3.5rem;
+    font-family: BeausanProBook;
     color: var(--gold);
+    font-size: 3.5rem;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .trangchu .content p{
     font-family: BeausanProBook;
-    text-shadow: 0 0 20px #243665;
     font-size: 1.5rem;
-    color: var(--blue);
+    color: #FFFFFF;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -443,4 +447,20 @@ header .fa-bars {
 
 .footer .box-container .box img {
     margin-top: 1rem;
+}
+
+.footer .credit {
+    font-family: Duepuntozero;
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span {
+    font-family: Duepuntozero;
+    color: #FF033E;
 }
